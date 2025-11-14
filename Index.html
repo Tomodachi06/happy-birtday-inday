@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sweet Surprise — Birthday Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="balloon" id="hiddenBalloon">🎈</div>
+      <h2>Welcome to</h2>
+      <h1 id="title">Hiroshi's Birthday!</h1>
+
+      <div class="cake">
+        <div class="plate">
+          <p class="text-code">enter the code</p>
+         <input id="codeInput" placeholder="Enter Name">
+        </div>
+        <div class="layer"></div>
+        <div class="frost"></div>
+        <div class="candle" style="left:40%"><div class="flame"></div></div>
+        <div class="candle" style="left:50%"><div class="flame"></div></div>
+        <div class="candle" style="left:60%"><div class="flame"></div></div>
+      </div>
+
+      <button class="enter-btn" id="enterBtn">Enter the Party 🎉</button>
+    </div>
+
+  <div class="error-notif" id="eror">
+    <p id="error-mess"></p>
+    <img src="gif2.gif" alt="sad" class="error-gif">
+    <button id="btn" class="btn">Retry</button>
+  </div>
+
+    <div class="party-room" id="partyRoom">
+
+   <video id="myVideo" controls>
+  <source src="videoplayback.mp4" type="video/mp4">
+</video>
+ <video id="myVideo2" controls>
+  <source src="speech.mp4" type="video/mp4">
+</video>
+
+      <div class="panel">
+        <div class="card cupcake-wrap">
+          <img src="gif1.gif" alt="" class="cupcake">
+        </div>
+
+        <div class="card">
+          <div class="gift-header">
+            <strong>Gifts</strong>
+            <button class="gift-btn" id="openGift">Open a Gift</button>
+          </div>
+          <div class="gift-area">
+            <div class="gift">🎁</div>
+            <div class="polaroids">
+              <div class="polaroid">📸</div>
+              <div class="polaroid">🙂</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="card">
+          <strong>FROM:ABE</strong>
+          <div class="board" id="board"><p>a happiest, happiest birthday to this pure, gentle, and absolutely lovable angel i’ve ever met! you’re such an amazing woman — kind, genuine, and someone who just brightens up everyone’s day without even trying. i hope life gives you all the happiness you deserve (and maybe a little extra, just because you’re you).  take care of yourself, okay? you’ve got this beautiful heart — don’t let the world tire it out too much. and hey, make sure to treat yourself today… you totally earned it! good luck future psychologist🎂🥳🤍</p></div>
+          <form id="noteForm" class="note-form">
+            <input id="noteName" placeholder="Your name" required />
+            <input id="noteText" placeholder="Message" required />
+            <button class="gift-btn" type="submit">Add</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <strong>Countdown</strong>
+          <div class="music-player">
+            <audio id="audioSource" controls>
+              <source src="output.mp3" type="audio/mpeg">
+            </audio>
+            <img src="ken.gif" alt="ken" class="ken-gif">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">Made with love ❤️ by Someone</div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="box">
+      <h3 id="modalTitle">Surprise!</h3>
+      <p id="modalBody">You found a little gift. Make a wish!</p>
+      <div class="modal-footer">
+        <button class="gift-btn" id="modalClose">Close</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
