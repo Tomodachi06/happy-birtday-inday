@@ -43,9 +43,6 @@ audioSource.addEventListener('ended', () => {
 
 myVideo2.addEventListener('ended', () => {
   myVideo2.style.display = 'none';
-  myVideo.style.display = 'block';
-  myVideo.style.opacity = '1', 50;
-  myVideo.play();
 })
 
 // Guestboard
@@ -131,3 +128,4 @@ musicToggle.addEventListener('click', () => {
     musicToggle.textContent = 'Play Music ▶️';
   }
 });
+
